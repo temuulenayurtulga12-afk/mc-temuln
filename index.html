@@ -1,22 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Breakout Game</title>
 </head>
-<body>
-    <h1>sainuu temuln</h1>
 
-    <p id="demo1"></p>
-    <p id="demo2"></p>
-    <script>
-const points = [40, 100, 1, 5, 25, 10];
-document.getElementById("demo1").innerHTML
-= points;
-points.sort(function(a, b){return a - b});
-document.getElementById("demo2").innerHTML
-= points;
+<body style="margin:0;">
+
+<canvas id="myCanvas" width="500" height="500"
+style="border:1px solid rgb(255, 0, 0)"></canvas>
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#0095DD";
+    ctx.fillText("Оноо : " + 0, 20, 20);
+
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#0095DD";
+    ctx.fillText("Амь: " + 3, 420, 20);
+
+//1dh egnee
+    ctx.beginPath();
+    ctx.rect(30, 30, 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.rect(110, 30, 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.rect(190, 30, 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+
+//2dh egnee
+    ctx.beginPath();
+    ctx.rect(30, 70, 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.rect(110, 70 , 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.rect(190, 70, 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+//3dh egnee
+    ctx.beginPath();
+    ctx.rect(30, 110, 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.rect(110, 110, 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.rect(190, 110, 60, 20);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+    
+//tawtsn
+    ctx.beginPath();
+    ctx.rect(200, 400, 80, 10);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+//bombg
+    ctx.beginPath();
+    ctx.arc(240, 390, 10, 0, 2 * 3.14, false);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
 </script>
+
 </body>
 </html>
